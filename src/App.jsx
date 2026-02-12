@@ -76,7 +76,7 @@ function App() {
     setIsLoading(true)
 
    try {
-      const response = await fetch('https://time-tracker-backend-production-40ca.up.railway.app/', {
+      const response = await fetch('https://time-tracker-backend-production-40ca.up.railway.app/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ message: userMessage })
